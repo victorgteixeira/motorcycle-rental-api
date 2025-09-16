@@ -4,16 +4,16 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using Mottu.Rentals.Api.Domain;
+using Moto.Rentals.Api.Domain;
 
-namespace Mottu.Rentals.Api.Infra;
+namespace Moto.Rentals.Api.Infra;
 
 public sealed class RabbitConsumerHostedService(
     IConnection connection, IServiceProvider sp, IConfiguration cfg, ILogger<RabbitConsumerHostedService> log) : BackgroundService
 {
     private IModel? _ch;
-    private readonly string _exchange = cfg["Rabbit:Exchange"] ?? "mottu.motorcycles";
-    private readonly string _queue = cfg["Rabbit:Queue"] ?? "mottu.motorcycles.created";
+    private readonly string _exchange = cfg["Rabbit:Exchange"] ?? "Moto.motorcycles";
+    private readonly string _queue = cfg["Rabbit:Queue"] ?? "Moto.motorcycles.created";
 
     protected override Task ExecuteAsync(CancellationToken stoppingToken)
     {

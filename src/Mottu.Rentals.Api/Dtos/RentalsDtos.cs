@@ -1,4 +1,4 @@
-namespace Mottu.Rentals.Api.Dtos;
+namespace Moto.Rentals.Api.Dtos;
 
 public sealed record CreateRentalRequest(Guid CourierId, Guid MotorcycleId, int PlanDays);
 public sealed record RentalResponse(Guid Id, Guid CourierId, Guid MotorcycleId, int PlanDays, decimal DailyPrice,

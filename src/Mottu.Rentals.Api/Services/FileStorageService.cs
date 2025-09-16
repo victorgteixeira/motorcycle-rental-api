@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 
-namespace Mottu.Rentals.Api.Services;
+namespace Moto.Rentals.Api.Services;
 
 public sealed class FileStorageService(IConfiguration cfg)
 {

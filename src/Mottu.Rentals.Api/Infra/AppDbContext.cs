@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Mottu.Rentals.Api.Domain;
+using Moto.Rentals.Api.Domain;
 
-namespace Mottu.Rentals.Api.Infra;
+namespace Moto.Rentals.Api.Infra;
 
 public sealed class AppDbContext(DbContextOptions<AppDbContext> opts) : DbContext(opts)
 {

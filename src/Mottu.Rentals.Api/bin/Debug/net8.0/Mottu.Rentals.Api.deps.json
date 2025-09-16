@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Mottu.Rentals.Api/1.0.0": {
+      "Moto.Rentals.Api/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.Design": "8.0.8",
@@ -15,7 +15,7 @@
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
-          "Mottu.Rentals.Api.dll": {}
+          "Moto.Rentals.Api.dll": {}
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -552,7 +552,7 @@
     }
   },
   "libraries": {
-    "Mottu.Rentals.Api/1.0.0": {
+    "Moto.Rentals.Api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,4 +1,4 @@
-using Mottu.Rentals.Api.Domain;
+using Moto.Rentals.Api.Domain;
 using Xunit;
 
 public class RentalPriceRulesTests

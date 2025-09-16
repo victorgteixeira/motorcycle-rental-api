@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Mottu.Rentals.Api.Domain;
-using Mottu.Rentals.Api.Dtos;
-using Mottu.Rentals.Api.Infra;
-using Mottu.Rentals.Api.Services;
+using Moto.Rentals.Api.Domain;
+using Moto.Rentals.Api.Dtos;
+using Moto.Rentals.Api.Infra;
+using Moto.Rentals.Api.Services;
 
-namespace Mottu.Rentals.Api.Controllers;
+namespace Moto.Rentals.Api.Controllers;
 
 [ApiController]
 [Route("api/v1/couriers")]

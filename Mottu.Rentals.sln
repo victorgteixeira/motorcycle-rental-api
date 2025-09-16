@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mottu.Rentals.Api", "src\Mottu.Rentals.Api\Mottu.Rentals.Api.csproj", "{6C9DDD27-0069-4E48-9BD9-A7D3CD8BFA12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moto.Rentals.Api", "src\Moto.Rentals.Api\Moto.Rentals.Api.csproj", "{6C9DDD27-0069-4E48-9BD9-A7D3CD8BFA12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

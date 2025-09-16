@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using RabbitMQ.Client;
-using Mottu.Rentals.Api.Infra;
-using Mottu.Rentals.Api.Services;
+using Moto.Rentals.Api.Infra;
+using Moto.Rentals.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

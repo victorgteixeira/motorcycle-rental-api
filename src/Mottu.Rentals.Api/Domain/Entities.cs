@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Mottu.Rentals.Api.Domain;
+namespace Moto.Rentals.Api.Domain;
 
 public sealed class Motorcycle
 {

@@ -1,6 +1,6 @@
-using Mottu.Rentals.Api.Domain;
+using Moto.Rentals.Api.Domain;
 
-namespace Mottu.Rentals.Api.Dtos;
+namespace Moto.Rentals.Api.Dtos;
 
 public sealed record CreateCourierRequest(
     string Identifier, string Name, string Cnpj, DateOnly BirthDate, string CnhNumber, CnhType CnhType);

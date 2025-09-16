@@ -1,4 +1,4 @@
-namespace Mottu.Rentals.Api.Domain;
+namespace Moto.Rentals.Api.Domain;
 
 public static class RentalPricingRules
 {

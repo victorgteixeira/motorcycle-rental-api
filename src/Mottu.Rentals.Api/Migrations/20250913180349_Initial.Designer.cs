@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Mottu.Rentals.Api.Infra;
+using Moto.Rentals.Api.Infra;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace Mottu.Rentals.Api.Migrations
+namespace Moto.Rentals.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250913180349_Initial")]
@@ -25,7 +25,7 @@ namespace Mottu.Rentals.Api.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Mottu.Rentals.Api.Domain.Courier", b =>
+            modelBuilder.Entity("Moto.Rentals.Api.Domain.Courier", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -70,7 +70,7 @@ namespace Mottu.Rentals.Api.Migrations
                     b.ToTable("Couriers");
                 });
 
-            modelBuilder.Entity("Mottu.Rentals.Api.Domain.Motorcycle", b =>
+            modelBuilder.Entity("Moto.Rentals.Api.Domain.Motorcycle", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -101,7 +101,7 @@ namespace Mottu.Rentals.Api.Migrations
                     b.ToTable("Motorcycles");
                 });
 
-            modelBuilder.Entity("Mottu.Rentals.Api.Domain.Rental", b =>
+            modelBuilder.Entity("Moto.Rentals.Api.Domain.Rental", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -146,7 +146,7 @@ namespace Mottu.Rentals.Api.Migrations
                     b.ToTable("Rentals");
                 });
 
-            modelBuilder.Entity("Mottu.Rentals.Api.Domain.YearNotification", b =>
+            modelBuilder.Entity("Moto.Rentals.Api.Domain.YearNotification", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -166,15 +166,15 @@ namespace Mottu.Rentals.Api.Migrations
                     b.ToTable("YearNotifications");
                 });
 
-            modelBuilder.Entity("Mottu.Rentals.Api.Domain.Rental", b =>
+            modelBuilder.Entity("Moto.Rentals.Api.Domain.Rental", b =>
                 {
-                    b.HasOne("Mottu.Rentals.Api.Domain.Courier", "Courier")
+                    b.HasOne("Moto.Rentals.Api.Domain.Courier", "Courier")
                         .WithMany("Rentals")
                         .HasForeignKey("CourierId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Mottu.Rentals.Api.Domain.Motorcycle", "Motorcycle")
+                    b.HasOne("Moto.Rentals.Api.Domain.Motorcycle", "Motorcycle")
                         .WithMany("Rentals")
                         .HasForeignKey("MotorcycleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -185,12 +185,12 @@ namespace Mottu.Rentals.Api.Migrations
                     b.Navigation("Motorcycle");
                 });
 
-            modelBuilder.Entity("Mottu.Rentals.Api.Domain.Courier", b =>
+            modelBuilder.Entity("Moto.Rentals.Api.Domain.Courier", b =>
                 {
                     b.Navigation("Rentals");
                 });
 
-            modelBuilder.Entity("Mottu.Rentals.Api.Domain.Motorcycle", b =>
+            modelBuilder.Entity("Moto.Rentals.Api.Domain.Motorcycle", b =>
                 {
                     b.Navigation("Rentals");
                 });
